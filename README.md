@@ -1,32 +1,51 @@
-# React + TypeScript + Vite
+# Games Hub
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Games Hub is a React and TypeScript web application built with Vite.
 
-Currently, two official plugins are available:
+## Features & Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **React 19** & **TypeScript**
+- **Vite** for fast development and build tooling
+- **Oxlint** for fast code linting
 
-## React Compiler
+## Getting Started
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Installation
 
-## Expanding the Oxlint configuration
+Install dependencies using `npm`:
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
-
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+```bash
+npm install
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+### Development
+
+To start the local development server:
+
+```bash
+npm run dev
+```
+
+### Build
+
+To build the project for production:
+
+```bash
+npm run build
+```
+
+### Linting
+
+To run Oxlint on the project:
+
+```bash
+npm run lint
+```
+
+### Preview
+
+To preview the production build locally:
+
+```bash
+npm run preview
+```
