@@ -49,3 +49,7 @@ To preview the production build locally:
 ```bash
 npm run preview
 ```
+
+## Deployment
+
+This project is configured for Firebase Hosting with build output served from the `dist` directory and SPA rewrites pointing to `/index.html`.
